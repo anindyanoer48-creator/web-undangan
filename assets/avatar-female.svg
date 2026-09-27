@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5c0"/>
+      <stop offset="50%" stop-color="#e5c158"/>
+      <stop offset="100%" stop-color="#99701a"/>
+    </linearGradient>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#143021"/>
+      <stop offset="100%" stop-color="#08140e"/>
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  <g fill="none" stroke="url(#avatarGold)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Sanggul / Gelung Putri -->
+    <ellipse cx="100" cy="70" rx="36" ry="34" fill="#0d2116" stroke-width="2"/>
+    <circle cx="100" cy="48" r="16" fill="#0d2116" stroke-width="1.8"/>
+    <!-- Cunduk Mentul Ornamen Melati -->
+    <path d="M100 48 L100 32" stroke-width="2"/>
+    <circle cx="100" cy="30" r="4" fill="url(#avatarGold)"/>
+    <path d="M88 52 L80 38" stroke-width="1.5"/>
+    <circle cx="78" cy="36" r="3" fill="url(#avatarGold)"/>
+    <path d="M112 52 L120 38" stroke-width="1.5"/>
+    <circle cx="122" cy="36" r="3" fill="url(#avatarGold)"/>
+    <!-- Wajah Putri -->
+    <path d="M78 85 C78 115, 122 115, 122 85 C122 68, 78 68, 78 85 Z" fill="#132c1e" stroke-width="2"/>
+    <!-- Leher -->
+    <path d="M92 108 L92 125 L108 125 L108 108" stroke-width="1.8"/>
+    <!-- Kalung / Ronce Melati -->
+    <path d="M85 125 C92 135, 108 135, 115 125" stroke-width="2"/>
+    <circle cx="100" cy="133" r="2.5" fill="url(#avatarGold)"/>
+    <!-- Bahu & Kebaya Putri -->
+    <path d="M45 195 C48 150, 75 125, 90 125 L110 125 C125 125, 152 150, 155 195" stroke-width="2.5" fill="#0c1d14"/>
+    <path d="M40 230 L40 195 C43 160, 75 135, 100 135 C125 135, 157 160, 160 195 L160 230" stroke-width="2"/>
+    <line x1="100" y1="135" x2="100" y2="230" stroke-width="1.5" stroke-dasharray="4,3"/>
+  </g>
+</svg>

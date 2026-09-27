@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2b2"/>
+      <stop offset="25%" stop-color="#e5c158"/>
+      <stop offset="50%" stop-color="#c99e32"/>
+      <stop offset="75%" stop-color="#f5e18a"/>
+      <stop offset="100%" stop-color="#99701a"/>
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4c8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8c6414" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <g fill="none" stroke="url(#goldGrad)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Gunungan Outer Contour (Kayon Silhouette) -->
+    <path d="M250 25 
+             C275 80, 310 130, 360 210
+             C410 290, 445 380, 440 480
+             C435 560, 395 630, 350 670
+             C330 690, 300 705, 270 710
+             L270 770 L250 785 L230 770 L230 710
+             C200 705, 170 690, 150 670
+             C105 630, 65 560, 60 480
+             C55 380, 90 290, 140 210
+             C190 130, 225 80, 250 25 Z" 
+          stroke-width="3" fill="#0b1a13" fill-opacity="0.75" />
+
+    <!-- Inner Decorative Border -->
+    <path d="M250 45 
+             C270 95, 300 145, 345 220
+             C390 295, 420 380, 415 470
+             C410 540, 375 605, 335 645
+             C310 665, 280 680, 250 682
+             C220 680, 190 665, 165 645
+             C125 605, 90 540, 85 470
+             C80 380, 110 295, 155 220
+             C200 145, 230 95, 250 45 Z" 
+          stroke-width="1.5" stroke-dasharray="4,3" opacity="0.85"/>
+
+    <!-- Puncak Gunungan (Makara & Mustaka) -->
+    <path d="M250 20 L250 75" stroke-width="2.5"/>
+    <circle cx="250" cy="22" r="5" fill="url(#goldGrad)" stroke="none"/>
+    <path d="M242 50 C246 40, 254 40, 258 50 C252 56, 248 56, 242 50 Z" fill="url(#goldGrad)"/>
+    <path d="M235 65 C243 55, 257 55, 265 65 C255 72, 245 72, 235 65 Z" fill="url(#goldGrad)"/>
+
+    <!-- Gapura Kamulyan (The Royal Gate / Regol Keraton at the base) -->
+    <path d="M190 700 L190 540 C190 510, 220 490, 250 490 C280 490, 310 510, 310 540 L310 700" stroke-width="2.5"/>
+    <!-- Atap Gapura Bertingkat -->
+    <path d="M175 550 L325 550" stroke-width="2"/>
+    <path d="M185 530 L315 530" stroke-width="2"/>
+    <path d="M200 510 L300 510" stroke-width="2"/>
+    <path d="M220 495 L280 495" stroke-width="2"/>
+    <!-- Pintu Gapura (Daun Pintu Berukir) -->
+    <line x1="250" y1="520" x2="250" y2="700" stroke-width="1.5"/>
+    <rect x="205" y="555" width="35" height="60" rx="3" stroke-width="1"/>
+    <rect x="260" y="555" width="35" height="60" rx="3" stroke-width="1"/>
+    <circle cx="230" cy="585" r="3" fill="url(#goldGrad)"/>
+    <circle cx="270" cy="585" r="3" fill="url(#goldGrad)"/>
+    <rect x="205" y="625" width="35" height="65" rx="3" stroke-width="1"/>
+    <rect x="260" y="625" width="35" height="65" rx="3" stroke-width="1"/>
+
+    <!-- Kalpataru / Pohon Hayat (Tree of Life Trunk & Foliage) -->
+    <path d="M250 490 L250 150" stroke-width="3"/>
+    
+    <!-- Dahan & Ranting Sulur Pohon Hayat (Symmetrical Javanese Foliage) -->
+    <!-- Tingkat 1 (Bawah) -->
+    <path d="M250 450 C290 440, 340 470, 370 440 C340 430, 300 420, 250 435" stroke-width="1.5"/>
+    <path d="M250 450 C210 440, 160 470, 130 440 C160 430, 200 420, 250 435" stroke-width="1.5"/>
+
+    <!-- Tingkat 2 -->
+    <path d="M250 390 C300 370, 360 400, 385 360 C345 350, 290 350, 250 375" stroke-width="1.5"/>
+    <path d="M250 390 C200 370, 140 400, 115 360 C155 350, 210 350, 250 375" stroke-width="1.5"/>
+
+    <!-- Tingkat 3 -->
+    <path d="M250 330 C300 310, 350 320, 370 280 C330 280, 290 285, 250 315" stroke-width="1.5"/>
+    <path d="M250 330 C200 310, 150 320, 130 280 C170 280, 210 285, 250 315" stroke-width="1.5"/>
+
+    <!-- Tingkat 4 (Atas) -->
+    <path d="M250 260 C290 230, 330 240, 335 190 C300 205, 275 215, 250 245" stroke-width="1.5"/>
+    <path d="M250 260 C210 230, 170 240, 165 190 C200 205, 225 215, 250 245" stroke-width="1.5"/>
+
+    <!-- Tingkat 5 (Pucuk) -->
+    <path d="M250 190 C280 160, 300 170, 295 130 C270 145, 260 160, 250 180" stroke-width="1.5"/>
+    <path d="M250 190 C220 160, 200 170, 205 130 C230 145, 240 160, 250 180" stroke-width="1.5"/>
+
+    <!-- Ukiran Sulur Lung-Lungan Bunga (Jasmine / Lotus buds) -->
+    <circle cx="370" cy="440" r="5" fill="url(#goldGrad)"/>
+    <circle cx="130" cy="440" r="5" fill="url(#goldGrad)"/>
+    <circle cx="385" cy="360" r="5" fill="url(#goldGrad)"/>
+    <circle cx="115" cy="360" r="5" fill="url(#goldGrad)"/>
+    <circle cx="370" cy="280" r="4.5" fill="url(#goldGrad)"/>
+    <circle cx="130" cy="280" r="4.5" fill="url(#goldGrad)"/>
+    <circle cx="335" cy="190" r="4" fill="url(#goldGrad)"/>
+    <circle cx="165" cy="190" r="4" fill="url(#goldGrad)"/>
+
+    <!-- Ornamen Burung Garuda / Kukila Kembar (Twin Birds of Peace) -->
+    <!-- Bird Right -->
+    <path d="M280 290 C310 270, 330 285, 340 300 C325 305, 305 295, 280 290 Z" fill="url(#goldGrad)" opacity="0.8"/>
+    <!-- Bird Left -->
+    <path d="M220 290 C190 270, 170 285, 160 300 C175 305, 195 295, 220 290 Z" fill="url(#goldGrad)" opacity="0.8"/>
+
+    <!-- Tangga Kamulyan (Undak-undakan Trap Gapura) -->
+    <line x1="170" y1="700" x2="330" y2="700" stroke-width="2"/>
+    <line x1="160" y1="710" x2="340" y2="710" stroke-width="2"/>
+
+    <!-- Gagang Gunungan (Cempurit Tanduk) -->
+    <path d="M245 710 L245 780 C245 790, 255 790, 255 780 L255 710 Z" fill="url(#goldGrad)"/>
+  </g>
+</svg>
