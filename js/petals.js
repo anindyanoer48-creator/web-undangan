@@ -10,7 +10,7 @@ class PetalsCanvas {
 
     this.ctx = this.canvas.getContext('2d');
     this.petals = [];
-    this.maxPetals = 35; // optimal balance of elegance and performance
+    this.maxPetals = window.innerWidth < 640 ? 16 : 32; // dynamic density for mobile performance
     this.animationId = null;
     this.isActive = true;
 
